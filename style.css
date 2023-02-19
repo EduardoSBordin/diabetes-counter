@@ -82,3 +82,20 @@ h1{
 label{
     color: white;
 }
+#btnResult{
+
+    background: #e84a5f;
+    color: white;
+    width: 80px;
+    height: 80px;
+    font-size: 26pt;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+#btnResult:hover{
+
+    transform: scale(1.1);
+}
