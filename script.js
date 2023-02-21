@@ -68,7 +68,12 @@ document.querySelector('body').addEventListener('click', () => {
 btnReload.addEventListener('click', () => {
         
     console.log('reload');
-    location.reload();
+    // location.reload();
+    type1.checked = false;
+    type2.checked = false;
+    type3.checked = false;
+    type4.checked = false;
+    res.innerHTML = '';
 });
 
 btnResult1.addEventListener('click', () => {
