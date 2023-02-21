@@ -26,27 +26,33 @@
 
             <div id="divBtns">
             
-            <input type="number" name="" id="numberSugar" placeholder="Sugar">
-            <button id="btnResult"><i class="fa-regular fa-heart"></i></button>
-            
-            <label for="">Tipo1
-            <input type="checkbox" name="" id="type1">
-            </label>
-
-            <label for="">Tipo2
-                <input type="checkbox" name="" id="type2">
-            </label>
-
+                <!-- <input type="number" name="" id="numberSugar" placeholder="Sugar"> -->
+                <select name="" id="fruits">
+                    <option value="banana" id="banana">Banana</option>
+                    <option value="maca" id="maca">Maça</option>
+                    <option value="kiwi" id="kiwi">Kiwi</option>
+                </select>
+                <input type="text" name="" id="fruitName" placeholder="Nome da fruta">
+                <button id="btnResult"><i class="fa-regular fa-heart"></i></button>
             </div>
-
+        
             <div id="divResult">
-            <p id="res">
-            </p>
+            
+                <label for="">Tipo1
+                    <input type="checkbox" name="" id="type1">
+                </label>
+    
+                <label for="">Tipo2
+                    <input type="checkbox" name="" id="type2">
+                </label>
             </div>
             
         </div>
 
-        <div id="result"></div>
+        <div id="result">
+            <p id="res">
+            </p>
+        </div>
         
     </section>
     
