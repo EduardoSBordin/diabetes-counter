@@ -95,37 +95,119 @@ label{
     border: none;
     padding: 5px;
     cursor: pointer;
-    transition: 0.4s;
+    transition: 0.3s;
 }
 #btnResult:hover{
 
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
+    box-shadow: rgba(214, 3, 3, 0.37) 0px 0px 0px 8px;
+}
+#moveBtnResult{
+    background: rgba(255, 255, 0, 0);
+    width: 80px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 20px;
+    text-align: center;
 }
 #inputs{
 
-    background: red;
+    background: rgba(255, 0, 0, 0);
     width: 100%;
-    height: 100px;
+    height: auto;
 
     display: flex;
     flex-direction: column;
 }
-#fruitName{
-
-    background: white;
-    border: none;
-    margin-top: 10px;
-    height: 40px;
-    width: 150px;
-    margin-left: 50px;
-}
 #divBtns{
 
-    background: blue;
+    background: rgba(0, 0, 255, 0.021);
+    width: 100%;
+    height: 100px;
+
+    display: flex;
+    flex-direction: row;
+}
+#divResult{
+    background: rgba(128, 0, 128, 0);
+    width: auto;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
 }
 #result{
-    background: yellow;
-    color: #000000;
+    background: rgba(255, 255, 0, 0);
+    color: #ffffff;
     width: 100%;
     height: 200px;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bolder;
+    font-size: 16pt;
+}
+select{
+    background: rgb(29, 29, 29);
+    color: white;
+    width: 200px;
+    height: 50px;
+    font-size: 16pt;
+    font-family: 'Nunito', sans-serif;
+    border: none;
+    text-decoration: none;
+    outline: none;
+    padding: 10px;
+    margin-left: 40px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+select:hover{
+}
+option{
+    background: rgb(37, 37, 37);
+}
+label{
+    margin-top: 5px;
+    font-family:'Nunito', sans-serif;
+    font-size: 16pt;
+}
+input[type="checkbox"]{
+    width: 25px;
+    height: 25px;
+    float: right;
+    border: 2px solid white;
+    border-radius: 5px;
+
+    -webkit-appearance: none;
+    appearance: none;
+
+    display: grid;
+    place-content: center;
+
+    transition: 0.4s;
+
+}
+input[type="checkbox"]:before{
+
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em rgb(255, 255, 255);
+
+    transform-origin: bottom left;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+
+}
+input[type="checkbox"]:checked::before{
+    transform: scale(1.4);
+}
+input[type="checkbox"]:disabled{
+
+    /* cursor: not-allowed; */
+    background: rgb(36, 36, 36);
+    border: 2px solid rgb(53, 53, 53);
+    transition: 0.4s;
 }

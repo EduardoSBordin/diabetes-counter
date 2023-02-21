@@ -7,6 +7,9 @@
     <title>Diabetes Counter</title>
     <link rel="stylesheet" href="style.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Quicksand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body>
@@ -26,24 +29,37 @@
 
             <div id="divBtns">
             
-                <!-- <input type="number" name="" id="numberSugar" placeholder="Sugar"> -->
+                <div id="optionsDiv">
                 <select name="" id="fruits">
+                    <option value="none" id="banana">Escolha</option>
                     <option value="banana" id="banana">Banana</option>
                     <option value="maca" id="maca">Maça</option>
                     <option value="kiwi" id="kiwi">Kiwi</option>
                 </select>
-                <input type="text" name="" id="fruitName" placeholder="Nome da fruta">
+                </div>
+
+                <div id="moveBtnResult">
                 <button id="btnResult"><i class="fa-regular fa-heart"></i></button>
+                </div>
             </div>
         
             <div id="divResult">
-            
-                <label for="">Tipo1
+                
+                <label for="">
                     <input type="checkbox" name="" id="type1">
+                    TIPO 1
                 </label>
     
-                <label for="">Tipo2
+                <label for="">TIPO 2
                     <input type="checkbox" name="" id="type2">
+                </label>
+
+                <label for="">DIABETES TIPO LADA
+                    <input type="checkbox" name="" id="type3">
+                </label>
+
+                <label for="">DIABETES GESTACIONAL
+                    <input type="checkbox" name="" id="type4">
                 </label>
             </div>
             
