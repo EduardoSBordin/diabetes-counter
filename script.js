@@ -1,4 +1,5 @@
-const btnResult = document.querySelector('#btnResult');
+const btnResult1 = document.querySelector('#btnResult1');
+const btnReload = document.querySelector('#btnResult2');
 const res = document.querySelector('#res');
 
 const type1 = document.querySelector('#type1');
@@ -58,13 +59,19 @@ function checkType(){
 
 }
 
-document.querySelector('body').addEventListener('click', () => {
 
+document.querySelector('body').addEventListener('click', () => {
+    
     checkType();
 }); 
 
+btnReload.addEventListener('click', () => {
+        
+    console.log('reload');
+    location.reload();
+});
 
-btnResult.addEventListener('click', () => {
+btnResult1.addEventListener('click', () => {
 
     console.log('Check');
 
@@ -121,6 +128,7 @@ btnResult.addEventListener('click', () => {
         if(fruits.value === 'kiwi'){
             res.innerHTML += '<br> Voce pode comer 2 kiwi por dia <br>';
         }
+        
     }
 
 
