@@ -81,8 +81,9 @@ btnResult1.addEventListener('click', () => {
     console.log('Check');
 
     if(type1.checked){
-        res.innerHTML = `<br> Voce tem diabetes tipo 1 <br>`;
 
+        res.innerHTML = `<br> Voce tem diabetes tipo 1 <br>`;
+        
         if(fruits.value === 'banana'){
             res.innerHTML += '<br> Voce pode comer 2 bananas por dia <br>';
         }
@@ -135,6 +136,4 @@ btnResult1.addEventListener('click', () => {
         }
         
     }
-
-
 });
